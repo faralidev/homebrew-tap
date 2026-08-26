@@ -8,6 +8,9 @@ cask "kolang-ide" do
   homepage "https://github.com/faralidev/kolang-ide"
 
   # Universal binary — works on both Apple Silicon and Intel Macs.
+  # The bundled Electron 33 runtime requires macOS 11 (Big Sur) or newer.
+  depends_on macos: :big_sur
+
   app "kolang-ide.app"
 
   # The kolang interpreter + linter are bundled inside the app, so no extra
