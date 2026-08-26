@@ -1,6 +1,6 @@
 cask "kolang-ide" do
-  version "0.1.0"
-  sha256 "87d677ff50da9f8bdbaeb09cb0421adae1aa17152649f01980f0151a1e9f185c"
+  version "0.1.1"
+  sha256 "1ce4a8c2c1114b2816576a9e284bfee9c349756b05259343dda9e624f027571f"
 
   url "https://github.com/faralidev/kolang-ide/releases/download/v#{version}/kolang-ide-#{version}-universal.dmg"
   name "Kolang IDE"
