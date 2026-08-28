@@ -15,22 +15,22 @@ class Kolang < Formula
   on_macos do
     on_arm do
       url "https://github.com/faralidev/kolang/releases/download/v0.1.1/kolang-darwin-arm64.tar.gz"
-      sha256 "5767d4891898cb28130aa5ca4a88722b95c47ae35e18d39f7f44a6df3a9dcf86"
+      sha256 "c48226471f3eddd17633bf69567aec640f036c176096a6321240a6b27a303cf0"
     end
     on_intel do
       url "https://github.com/faralidev/kolang/releases/download/v0.1.1/kolang-darwin-amd64.tar.gz"
-      sha256 "2982302bdcf856ca9420638a4472c7bff9afc126dce5e2cdf4a496049bf4529a"
+      sha256 "49e6eec8cb7804ee3dfd95447646056fed2386c038e99cd3467917a8db0fe387"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/faralidev/kolang/releases/download/v0.1.1/kolang-linux-arm64.tar.gz"
-      sha256 "374f732735836a0d77b61a218c80f25e0bb2bd37ab10cbc6faec042af0c7b360"
+      sha256 "aa4cc006dd240367e917c2a3a62d2bdba2f0ebbd9fe55a64e12c9b2d769d6d87"
     end
     on_intel do
       url "https://github.com/faralidev/kolang/releases/download/v0.1.1/kolang-linux-amd64.tar.gz"
-      sha256 "f6d6d94dcfff827eb751817a8d5b26f9382951687af90e33b14e3ce9c7dd465f"
+      sha256 "4849768a89d1ddebab8f468c6f2a12576d03a2d7cc4c5143f0834cf4f841726e"
     end
   end
 
