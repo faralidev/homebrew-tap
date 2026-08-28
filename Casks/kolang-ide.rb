@@ -7,8 +7,8 @@
 # (kolang-ide/.github/workflows/release.yml) updates version+sha256 on each release.
 
 cask "kolang-ide" do
-  version "0.1.2"
-  sha256 "7b9df16e885f631b533669423f668784b4f36413264c0e9712734d702ef03da3"
+  version "0.1.3"
+  sha256 "148fc9a1d46b9a7e3ed828d6e95f640c47701e4e34b3632a3246bcd00dc66ba2"
 
   url "https://github.com/faralidev/kolang-ide/releases/download/v#{version}/kolang-ide_#{version}_universal.dmg"
   name "Kolang IDE"
