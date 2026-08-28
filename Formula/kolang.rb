@@ -2,35 +2,35 @@
 # Install with: brew install faralidev/tap/kolang
 # Or: brew tap faralidev/tap && brew install kolang
 #
-# Uses prebuilt binaries from GitHub Releases — no build step.
+# Uses prebuilt binary archives (.tar.gz) from GitHub Releases — no build step.
 # `livecheck` auto-detects the latest version; the bump workflow
 # (kolang/.github/workflows/release.yml) updates version+sha256 on each release.
 
 class Kolang < Formula
   desc "Persian programming language interpreter"
   homepage "https://github.com/faralidev/kolang"
-  version "1.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/faralidev/kolang/releases/download/v1.1.0/kolang-darwin-arm64"
-      sha256 "1f9c014d0fd51fd46abe794afbaf77934b4e6f45a473d30491f24112cec50ba6"
+      url "https://github.com/faralidev/kolang/releases/download/v0.1.1/kolang-darwin-arm64.tar.gz"
+      sha256 "5767d4891898cb28130aa5ca4a88722b95c47ae35e18d39f7f44a6df3a9dcf86"
     end
     on_intel do
-      url "https://github.com/faralidev/kolang/releases/download/v1.1.0/kolang-darwin-amd64"
-      sha256 "c92bf7ce758f695408b313e2cdf6243c8289c96b0604de6dc4874d1562d3e54c"
+      url "https://github.com/faralidev/kolang/releases/download/v0.1.1/kolang-darwin-amd64.tar.gz"
+      sha256 "2982302bdcf856ca9420638a4472c7bff9afc126dce5e2cdf4a496049bf4529a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/faralidev/kolang/releases/download/v1.1.0/kolang-linux-arm64"
-      sha256 "8cd10f1d50982aa0dd942115a6f9c78591c0973c8c97e3cf6a664c1eed449ead"
+      url "https://github.com/faralidev/kolang/releases/download/v0.1.1/kolang-linux-arm64.tar.gz"
+      sha256 "374f732735836a0d77b61a218c80f25e0bb2bd37ab10cbc6faec042af0c7b360"
     end
     on_intel do
-      url "https://github.com/faralidev/kolang/releases/download/v1.1.0/kolang-linux-amd64"
-      sha256 "c26d67e25672708b358f2b27a53aee665453ddd080dbea344854385bd5e59136"
+      url "https://github.com/faralidev/kolang/releases/download/v0.1.1/kolang-linux-amd64.tar.gz"
+      sha256 "f6d6d94dcfff827eb751817a8d5b26f9382951687af90e33b14e3ce9c7dd465f"
     end
   end
 
@@ -41,11 +41,9 @@ class Kolang < Formula
   end
 
   def install
-    # The release publishes raw binaries (no archive). The downloaded file is
-    # the binary itself, possibly named with platform suffix.
-    candidates = Dir["kolang*"].select { |f| File.file?(f) }
-    odie "Could not find the kolang binary in the release" if candidates.empty?
-    bin.install candidates.first => "kolang"
+    # The release publishes archives (.tar.gz) containing the top-level binary.
+    # Homebrew auto-extracts the archive into the build directory.
+    bin.install "kolang"
   end
 
   test do
