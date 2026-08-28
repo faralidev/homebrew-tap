@@ -10,7 +10,7 @@ cask "kolang-ide" do
   version "0.1.2"
   sha256 "1eb98d84615bdad06adcec02fb7cd084d4e57209e22776eee0f216da2a679be2"
 
-  url "https://github.com/faralidev/kolang-ide/releases/download/v#{version}/kolang-ide-#{version}-universal.dmg"
+  url "https://github.com/faralidev/kolang-ide/releases/download/v#{version}/kolang-ide_#{version}_universal.dmg"
   name "Kolang IDE"
   desc "Desktop editor for the Kolang Persian programming language"
   homepage "https://github.com/faralidev/kolang-ide"
