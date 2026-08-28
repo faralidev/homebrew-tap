@@ -15,22 +15,22 @@ class KolangLinter < Formula
   on_macos do
     on_arm do
       url "https://github.com/faralidev/kolang-linter/releases/download/v0.1.1/kolang-linter-darwin-arm64.tar.gz"
-      sha256 "add93f1093b075e594111c02fa519c588d0b5299cbd982a38205c693ce9b8187"
+      sha256 "411985353ce75dc3a0ec8eb423d4075bdd1ce15f379bd9a52efde8ad77ffbc7c"
     end
     on_intel do
       url "https://github.com/faralidev/kolang-linter/releases/download/v0.1.1/kolang-linter-darwin-amd64.tar.gz"
-      sha256 "c486263ccf6ccb9ab9787b02c610791854a0949ae795cbbc2a1598934f23544d"
+      sha256 "72f3c12cb551d7568cca1749ec6d9a6fe52907dc718fd2a9ab58a411a2ff214e"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/faralidev/kolang-linter/releases/download/v0.1.1/kolang-linter-linux-arm64.tar.gz"
-      sha256 "84b80dd35dd01adf63d4c5d37ed00f33e14262cd51155465f4445178207438fb"
+      sha256 "6e4fb213795cf1e83cf2e0c0eaf1a58d0fccdff145bcfcf7949738c11aa405c7"
     end
     on_intel do
       url "https://github.com/faralidev/kolang-linter/releases/download/v0.1.1/kolang-linter-linux-amd64.tar.gz"
-      sha256 "c4b26adcd6b8dcde4d0209cef444954d4c38edd521c7282a2366211915b1b6b6"
+      sha256 "b153c1c2a01a5983e28d138a4afdb4fced5923b86976e01e961e9b91201be9f1"
     end
   end
 
