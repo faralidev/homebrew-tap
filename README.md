@@ -72,3 +72,22 @@ All formulas install **prebuilt binaries** from GitHub Releases — there is **n
 
 - Version: **0.0.1** (all formulas)
 - License: **MIT**
+## OpenSign (macOS)
+
+OpenSign — امضای PDF با کارت مای‌نامبر ژاپن — به‌صورت Cask در دسترس است:
+
+```bash
+brew install --cask faralidev/tap/opensign
+```
+
+نصب Cask نشان قرنطینه‌ی macOS را برمی‌دارد، بنابراین برنامه بدون پیام Gatekeeper باز می‌شود. (دانلود مستقیم DMG به یک دستور ترمینال یک‌باره نیاز دارد — توضیح در خود DMG و سایت.)
+
+### English
+
+OpenSign (Japanese My Number Card PDF signing) is available as a Cask:
+
+```bash
+brew install --cask faralidev/tap/opensign
+```
+
+The cask strips macOS's quarantine flag on install, so the app opens with no Gatekeeper prompt. A direct DMG download needs a one-time Terminal step (see the DMG or the website).
