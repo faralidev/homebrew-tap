@@ -31,7 +31,6 @@ cask "opensign" do
   app "OpenSign.app"
 
   postflight do
-    system_command "/usr/bin/touch", args: ["/tmp/postflight_ran"], sudo: false
     # Undo the default cask quarantine: macOS refuses to open quarantined
     # ad-hoc-signed apps ("damaged"). Safe: only strips an extended
     # attribute from the freshly installed app.
