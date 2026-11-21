@@ -14,7 +14,7 @@
 
 cask "opensign" do
   version "1.0.0"
-  sha256 "e69fc6059ec23c2275ab1b8e58a75d1cc747cf864d7cb4de9efadf9e46292d34"
+  sha256 "44721a8156a490a3bb2d4187dc5af05f4ef41c5a4410e88f7783445c0e08c7f1"
 
   url "https://github.com/faralidev/opensign-site/releases/download/v#{version}/OpenSign-macos.dmg"
   name "OpenSign"
